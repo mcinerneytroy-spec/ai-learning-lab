@@ -1,0 +1,107 @@
+{
+  "users": [
+    {
+      "id": "fictional-001",
+      "primaryEmail": "alex.morgan@example.com",
+      "name": {"givenName": "Alex", "familyName": "Morgan", "fullName": "Alex Morgan"},
+      "isEnrolledIn2Sv": true,
+      "isEnforcedIn2Sv": true,
+      "isAdmin": false,
+      "isDelegatedAdmin": false,
+      "suspended": false,
+      "lastLoginTime": "2026-11-14T00:00:00Z",
+      "creationTime": "2025-01-01T00:00:00Z",
+      "orgUnitPath": "/Employees"
+    },
+    {
+      "id": "fictional-002",
+      "primaryEmail": "blair.chen@example.com",
+      "name": {"givenName": "Blair", "familyName": "Chen", "fullName": "Blair Chen"},
+      "isEnrolledIn2Sv": false,
+      "isEnforcedIn2Sv": false,
+      "isAdmin": false,
+      "isDelegatedAdmin": false,
+      "suspended": false,
+      "lastLoginTime": "2026-11-13T00:00:00Z",
+      "creationTime": "2025-01-01T00:00:00Z",
+      "orgUnitPath": "/Employees"
+    },
+    {
+      "id": "fictional-003",
+      "primaryEmail": "casey.rivera@example.com",
+      "name": {"givenName": "Casey", "familyName": "Rivera", "fullName": "Casey Rivera"},
+      "isEnrolledIn2Sv": true,
+      "isEnforcedIn2Sv": true,
+      "isAdmin": true,
+      "isDelegatedAdmin": false,
+      "suspended": false,
+      "lastLoginTime": "2026-11-14T00:00:00Z",
+      "creationTime": "2025-01-01T00:00:00Z",
+      "orgUnitPath": "/Administrators"
+    },
+    {
+      "id": "fictional-004",
+      "primaryEmail": "devon.patel@example.com",
+      "name": {"givenName": "Devon", "familyName": "Patel", "fullName": "Devon Patel"},
+      "isEnrolledIn2Sv": false,
+      "isEnforcedIn2Sv": false,
+      "isAdmin": false,
+      "isDelegatedAdmin": true,
+      "suspended": false,
+      "lastLoginTime": "2026-07-01T00:00:00Z",
+      "creationTime": "2025-01-01T00:00:00Z",
+      "orgUnitPath": "/Administrators"
+    },
+    {
+      "id": "fictional-005",
+      "primaryEmail": "emery.brooks@example.com",
+      "name": {"givenName": "Emery", "familyName": "Brooks", "fullName": "Emery Brooks"},
+      "isEnrolledIn2Sv": true,
+      "isEnforcedIn2Sv": true,
+      "isAdmin": false,
+      "isDelegatedAdmin": false,
+      "suspended": false,
+      "lastLoginTime": "2026-08-16T00:00:00Z",
+      "creationTime": "2025-01-01T00:00:00Z",
+      "orgUnitPath": "/Employees"
+    },
+    {
+      "id": "fictional-006",
+      "primaryEmail": "frankie.lee@example.com",
+      "name": {"givenName": "Frankie", "familyName": "Lee", "fullName": "Frankie Lee"},
+      "isEnrolledIn2Sv": true,
+      "isEnforcedIn2Sv": true,
+      "isAdmin": false,
+      "isDelegatedAdmin": false,
+      "suspended": false,
+      "lastLoginTime": "2026-08-17T00:00:00Z",
+      "creationTime": "2025-01-01T00:00:00Z",
+      "orgUnitPath": "/Employees"
+    },
+    {
+      "id": "fictional-007",
+      "primaryEmail": "harper.quinn@example.com",
+      "name": {"givenName": "Harper", "familyName": "Quinn", "fullName": "Harper Quinn"},
+      "isEnrolledIn2Sv": false,
+      "isEnforcedIn2Sv": false,
+      "isAdmin": false,
+      "isDelegatedAdmin": false,
+      "suspended": true,
+      "lastLoginTime": "2026-07-01T00:00:00Z",
+      "creationTime": "2025-01-01T00:00:00Z",
+      "orgUnitPath": "/Former Employees"
+    },
+    {
+      "id": "fictional-008",
+      "primaryEmail": "indigo.ellis@example.com",
+      "name": {"givenName": "Indigo", "familyName": "Ellis", "fullName": "Indigo Ellis"},
+      "isEnrolledIn2Sv": true,
+      "isEnforcedIn2Sv": false,
+      "isAdmin": false,
+      "isDelegatedAdmin": false,
+      "suspended": false,
+      "creationTime": "2025-01-01T00:00:00Z",
+      "orgUnitPath": "/Employees"
+    }
+  ]
+}

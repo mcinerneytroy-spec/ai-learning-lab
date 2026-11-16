@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0",
+  "fictional": true,
+  "snapshotId": "demo-day-2",
+  "observedAt": "2026-11-16T12:00:00Z",
+  "identityProvider": "google-managed",
+  "resource": "projects/demo-security-project",
+  "sourceStatus": {
+    "directoryUsers": "complete",
+    "iamPolicy": "complete",
+    "adminEvents": "complete",
+    "devices": "complete",
+    "edrObservations": "complete"
+  },
+  "directoryUsers": [
+    {
+      "id": "fictional-001",
+      "primaryEmail": "alex.morgan@example.com",
+      "name": {"givenName": "Alex", "familyName": "Morgan", "fullName": "Alex Morgan"},
+      "isEnrolledIn2Sv": true,
+      "isEnforcedIn2Sv": true,
+      "suspended": false
+    },
+    {
+      "id": "fictional-002",
+      "primaryEmail": "blair.chen@example.com",
+      "name": {"givenName": "Blair", "familyName": "Chen", "fullName": "Blair Chen"},
+      "isEnrolledIn2Sv": true,
+      "isEnforcedIn2Sv": true,
+      "suspended": false
+    },
+    {
+      "id": "fictional-003",
+      "primaryEmail": "casey.rivera@example.com",
+      "name": {"givenName": "Casey", "familyName": "Rivera", "fullName": "Casey Rivera"},
+      "isEnrolledIn2Sv": true,
+      "isEnforcedIn2Sv": true,
+      "suspended": false
+    },
+    {
+      "id": "fictional-008",
+      "primaryEmail": "indigo.ellis@example.com",
+      "name": {"givenName": "Indigo", "familyName": "Ellis", "fullName": "Indigo Ellis"},
+      "isEnrolledIn2Sv": true,
+      "isEnforcedIn2Sv": false,
+      "suspended": false
+    }
+  ],
+  "iamPolicy": {
+    "version": 1,
+    "bindings": [
+      {
+        "role": "roles/viewer",
+        "members": [
+          "user:alex.morgan@example.com",
+          "user:blair.chen@example.com",
+          "user:indigo.ellis@example.com"
+        ]
+      },
+      {
+        "role": "roles/owner",
+        "members": ["user:casey.rivera@example.com"]
+      },
+      {
+        "role": "roles/iam.securityAdmin",
+        "members": ["user:blair.chen@example.com"]
+      }
+    ]
+  },
+  "adminEventWindow": {
+    "startExclusive": "2026-11-15T12:00:00Z",
+    "endInclusive": "2026-11-16T12:00:00Z"
+  },
+  "adminEvents": [
+    {
+      "eventId": "fictional-event-001",
+      "eventTime": "2026-11-16T09:00:00Z",
+      "actor": "user:casey.rivera@example.com",
+      "action": "ADD_BINDING",
+      "resource": "projects/demo-security-project",
+      "role": "roles/iam.securityAdmin",
+      "member": "user:blair.chen@example.com"
+    }
+  ],
+  "devices": [
+    {
+      "deviceId": "fictional-device-001",
+      "hostname": "demo-gcp-vm-01",
+      "assetType": "compute-engine-vm",
+      "operatingSystem": "Linux",
+      "edrRequired": true
+    },
+    {
+      "deviceId": "fictional-device-002",
+      "hostname": "demo-laptop-01",
+      "assetType": "employee-laptop",
+      "operatingSystem": "macOS",
+      "edrRequired": true
+    }
+  ],
+  "edrObservations": [
+    {
+      "deviceId": "fictional-device-001",
+      "agentId": "fictional-agent-001",
+      "status": "healthy",
+      "lastSeenAt": "2026-11-15T11:55:00Z"
+    },
+    {
+      "deviceId": "fictional-device-002",
+      "agentId": "fictional-agent-002",
+      "status": "healthy",
+      "lastSeenAt": "2026-11-16T11:50:00Z"
+    }
+  ]
+}

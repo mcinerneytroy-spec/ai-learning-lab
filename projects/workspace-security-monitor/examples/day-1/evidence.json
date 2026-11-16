@@ -1,0 +1,289 @@
+{
+  "evidenceSchemaVersion": "1.0",
+  "fictional": true,
+  "runId": "fd7a72c90c8745868dba4059cd8dd750",
+  "collectorId": "portfolio-demo",
+  "collectorIdentityAssurance": "Self-declared demo label; not authenticated identity.",
+  "collectionStartedAt": "2026-11-16T15:55:31.304543+00:00",
+  "collectionCompletedAt": "2026-11-16T15:55:31.316882+00:00",
+  "runStatus": "COMPLETED",
+  "sources": [
+    {
+      "day": 1,
+      "url": "http://127.0.0.1:62167/api/v1/snapshots/day-1",
+      "method": "GET",
+      "collectionStartedAt": "2026-11-16T15:55:31.305342+00:00",
+      "validationStatus": "VALIDATED",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "responseReceivedAt": "2026-11-16T15:55:31.315631+00:00",
+      "bodyTruncated": false,
+      "rawBodyBase64": "ewogICJzY2hlbWFWZXJzaW9uIjogIjEuMCIsCiAgImZpY3Rpb25hbCI6IHRydWUsCiAgInNuYXBzaG90SWQiOiAiZGVtby1kYXktMSIsCiAgIm9ic2VydmVkQXQiOiAiMjAyNi0xMS0xNVQxMjowMDowMFoiLAogICJpZGVudGl0eVByb3ZpZGVyIjogImdvb2dsZS1tYW5hZ2VkIiwKICAicmVzb3VyY2UiOiAicHJvamVjdHMvZGVtby1zZWN1cml0eS1wcm9qZWN0IiwKICAic291cmNlU3RhdHVzIjogewogICAgImRpcmVjdG9yeVVzZXJzIjogImNvbXBsZXRlIiwKICAgICJpYW1Qb2xpY3kiOiAiY29tcGxldGUiLAogICAgImFkbWluRXZlbnRzIjogImNvbXBsZXRlIiwKICAgICJkZXZpY2VzIjogImNvbXBsZXRlIiwKICAgICJlZHJPYnNlcnZhdGlvbnMiOiAiY29tcGxldGUiCiAgfSwKICAiZGlyZWN0b3J5VXNlcnMiOiBbCiAgICB7CiAgICAgICJpZCI6ICJmaWN0aW9uYWwtMDAxIiwKICAgICAgInByaW1hcnlFbWFpbCI6ICJhbGV4Lm1vcmdhbkBleGFtcGxlLmNvbSIsCiAgICAgICJuYW1lIjogewogICAgICAgICJnaXZlbk5hbWUiOiAiQWxleCIsCiAgICAgICAgImZhbWlseU5hbWUiOiAiTW9yZ2FuIiwKICAgICAgICAiZnVsbE5hbWUiOiAiQWxleCBNb3JnYW4iCiAgICAgIH0sCiAgICAgICJpc0Vucm9sbGVkSW4yU3YiOiB0cnVlLAogICAgICAiaXNFbmZvcmNlZEluMlN2IjogdHJ1ZSwKICAgICAgInN1c3BlbmRlZCI6IGZhbHNlCiAgICB9LAogICAgewogICAgICAiaWQiOiAiZmljdGlvbmFsLTAwMiIsCiAgICAgICJwcmltYXJ5RW1haWwiOiAiYmxhaXIuY2hlbkBleGFtcGxlLmNvbSIsCiAgICAgICJuYW1lIjogewogICAgICAgICJnaXZlbk5hbWUiOiAiQmxhaXIiLAogICAgICAgICJmYW1pbHlOYW1lIjogIkNoZW4iLAogICAgICAgICJmdWxsTmFtZSI6ICJCbGFpciBDaGVuIgogICAgICB9LAogICAgICAiaXNFbnJvbGxlZEluMlN2IjogZmFsc2UsCiAgICAgICJpc0VuZm9yY2VkSW4yU3YiOiBmYWxzZSwKICAgICAgInN1c3BlbmRlZCI6IGZhbHNlCiAgICB9LAogICAgewogICAgICAiaWQiOiAiZmljdGlvbmFsLTAwMyIsCiAgICAgICJwcmltYXJ5RW1haWwiOiAiY2FzZXkucml2ZXJhQGV4YW1wbGUuY29tIiwKICAgICAgIm5hbWUiOiB7CiAgICAgICAgImdpdmVuTmFtZSI6ICJDYXNleSIsCiAgICAgICAgImZhbWlseU5hbWUiOiAiUml2ZXJhIiwKICAgICAgICAiZnVsbE5hbWUiOiAiQ2FzZXkgUml2ZXJhIgogICAgICB9LAogICAgICAiaXNFbnJvbGxlZEluMlN2IjogdHJ1ZSwKICAgICAgImlzRW5mb3JjZWRJbjJTdiI6IHRydWUsCiAgICAgICJzdXNwZW5kZWQiOiBmYWxzZQogICAgfSwKICAgIHsKICAgICAgImlkIjogImZpY3Rpb25hbC0wMDgiLAogICAgICAicHJpbWFyeUVtYWlsIjogImluZGlnby5lbGxpc0BleGFtcGxlLmNvbSIsCiAgICAgICJuYW1lIjogewogICAgICAgICJnaXZlbk5hbWUiOiAiSW5kaWdvIiwKICAgICAgICAiZmFtaWx5TmFtZSI6ICJFbGxpcyIsCiAgICAgICAgImZ1bGxOYW1lIjogIkluZGlnbyBFbGxpcyIKICAgICAgfSwKICAgICAgImlzRW5yb2xsZWRJbjJTdiI6IHRydWUsCiAgICAgICJpc0VuZm9yY2VkSW4yU3YiOiBmYWxzZSwKICAgICAgInN1c3BlbmRlZCI6IGZhbHNlCiAgICB9CiAgXSwKICAiaWFtUG9saWN5IjogewogICAgInZlcnNpb24iOiAxLAogICAgImJpbmRpbmdzIjogWwogICAgICB7CiAgICAgICAgInJvbGUiOiAicm9sZXMvdmlld2VyIiwKICAgICAgICAibWVtYmVycyI6IFsKICAgICAgICAgICJ1c2VyOmFsZXgubW9yZ2FuQGV4YW1wbGUuY29tIiwKICAgICAgICAgICJ1c2VyOmJsYWlyLmNoZW5AZXhhbXBsZS5jb20iLAogICAgICAgICAgInVzZXI6aW5kaWdvLmVsbGlzQGV4YW1wbGUuY29tIgogICAgICAgIF0KICAgICAgfSwKICAgICAgewogICAgICAgICJyb2xlIjogInJvbGVzL293bmVyIiwKICAgICAgICAibWVtYmVycyI6IFsKICAgICAgICAgICJ1c2VyOmNhc2V5LnJpdmVyYUBleGFtcGxlLmNvbSIKICAgICAgICBdCiAgICAgIH0KICAgIF0KICB9LAogICJhZG1pbkV2ZW50V2luZG93IjogewogICAgInN0YXJ0RXhjbHVzaXZlIjogIjIwMjYtMTEtMTRUMTI6MDA6MDBaIiwKICAgICJlbmRJbmNsdXNpdmUiOiAiMjAyNi0xMS0xNVQxMjowMDowMFoiCiAgfSwKICAiYWRtaW5FdmVudHMiOiBbXSwKICAiZGV2aWNlcyI6IFsKICAgIHsKICAgICAgImRldmljZUlkIjogImZpY3Rpb25hbC1kZXZpY2UtMDAxIiwKICAgICAgImhvc3RuYW1lIjogImRlbW8tZ2NwLXZtLTAxIiwKICAgICAgImFzc2V0VHlwZSI6ICJjb21wdXRlLWVuZ2luZS12bSIsCiAgICAgICJvcGVyYXRpbmdTeXN0ZW0iOiAiTGludXgiLAogICAgICAiZWRyUmVxdWlyZWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAiZGV2aWNlSWQiOiAiZmljdGlvbmFsLWRldmljZS0wMDIiLAogICAgICAiaG9zdG5hbWUiOiAiZGVtby1sYXB0b3AtMDEiLAogICAgICAiYXNzZXRUeXBlIjogImVtcGxveWVlLWxhcHRvcCIsCiAgICAgICJvcGVyYXRpbmdTeXN0ZW0iOiAibWFjT1MiLAogICAgICAiZWRyUmVxdWlyZWQiOiB0cnVlCiAgICB9CiAgXSwKICAiZWRyT2JzZXJ2YXRpb25zIjogWwogICAgewogICAgICAiZGV2aWNlSWQiOiAiZmljdGlvbmFsLWRldmljZS0wMDEiLAogICAgICAiYWdlbnRJZCI6ICJmaWN0aW9uYWwtYWdlbnQtMDAxIiwKICAgICAgInN0YXR1cyI6ICJoZWFsdGh5IiwKICAgICAgImxhc3RTZWVuQXQiOiAiMjAyNi0xMS0xNVQxMTo1NTowMFoiCiAgICB9CiAgXQp9",
+      "rawBodySha256": "528db086cd27500d94edfe3c43866ec6c291ce097cfa39e2f0823f615ed0e84d",
+      "snapshot": {
+        "schemaVersion": "1.0",
+        "fictional": true,
+        "snapshotId": "demo-day-1",
+        "observedAt": "2026-11-15T12:00:00Z",
+        "identityProvider": "google-managed",
+        "resource": "projects/demo-security-project",
+        "sourceStatus": {
+          "directoryUsers": "complete",
+          "iamPolicy": "complete",
+          "adminEvents": "complete",
+          "devices": "complete",
+          "edrObservations": "complete"
+        },
+        "directoryUsers": [
+          {
+            "id": "fictional-001",
+            "primaryEmail": "alex.morgan@example.com",
+            "name": {
+              "givenName": "Alex",
+              "familyName": "Morgan",
+              "fullName": "Alex Morgan"
+            },
+            "isEnrolledIn2Sv": true,
+            "isEnforcedIn2Sv": true,
+            "suspended": false
+          },
+          {
+            "id": "fictional-002",
+            "primaryEmail": "blair.chen@example.com",
+            "name": {
+              "givenName": "Blair",
+              "familyName": "Chen",
+              "fullName": "Blair Chen"
+            },
+            "isEnrolledIn2Sv": false,
+            "isEnforcedIn2Sv": false,
+            "suspended": false
+          },
+          {
+            "id": "fictional-003",
+            "primaryEmail": "casey.rivera@example.com",
+            "name": {
+              "givenName": "Casey",
+              "familyName": "Rivera",
+              "fullName": "Casey Rivera"
+            },
+            "isEnrolledIn2Sv": true,
+            "isEnforcedIn2Sv": true,
+            "suspended": false
+          },
+          {
+            "id": "fictional-008",
+            "primaryEmail": "indigo.ellis@example.com",
+            "name": {
+              "givenName": "Indigo",
+              "familyName": "Ellis",
+              "fullName": "Indigo Ellis"
+            },
+            "isEnrolledIn2Sv": true,
+            "isEnforcedIn2Sv": false,
+            "suspended": false
+          }
+        ],
+        "iamPolicy": {
+          "version": 1,
+          "bindings": [
+            {
+              "role": "roles/viewer",
+              "members": [
+                "user:alex.morgan@example.com",
+                "user:blair.chen@example.com",
+                "user:indigo.ellis@example.com"
+              ]
+            },
+            {
+              "role": "roles/owner",
+              "members": [
+                "user:casey.rivera@example.com"
+              ]
+            }
+          ]
+        },
+        "adminEventWindow": {
+          "startExclusive": "2026-11-14T12:00:00Z",
+          "endInclusive": "2026-11-15T12:00:00Z"
+        },
+        "adminEvents": [],
+        "devices": [
+          {
+            "deviceId": "fictional-device-001",
+            "hostname": "demo-gcp-vm-01",
+            "assetType": "compute-engine-vm",
+            "operatingSystem": "Linux",
+            "edrRequired": true
+          },
+          {
+            "deviceId": "fictional-device-002",
+            "hostname": "demo-laptop-01",
+            "assetType": "employee-laptop",
+            "operatingSystem": "macOS",
+            "edrRequired": true
+          }
+        ],
+        "edrObservations": [
+          {
+            "deviceId": "fictional-device-001",
+            "agentId": "fictional-agent-001",
+            "status": "healthy",
+            "lastSeenAt": "2026-11-15T11:55:00Z"
+          }
+        ]
+      },
+      "collectionCompletedAt": "2026-11-16T15:55:31.315692+00:00"
+    }
+  ],
+  "controls": [
+    {
+      "controlId": "MFA_COVERAGE",
+      "policyVersion": "mfa-v1",
+      "snapshotId": "demo-day-1",
+      "resource": "projects/demo-security-project",
+      "sourceObservedAt": "2026-11-15T12:00:00Z",
+      "scope": "Direct human-user IAM bindings only; inherited access is not assessed.",
+      "excludedPrincipals": [],
+      "results": [
+        {
+          "principal": "user:alex.morgan@example.com",
+          "userId": "fictional-001",
+          "roles": [
+            "roles/viewer"
+          ],
+          "status": "PASS",
+          "reason": "MFA enrollment and enforcement are both enabled.",
+          "evidence": {
+            "isEnrolledIn2Sv": true,
+            "isEnforcedIn2Sv": true,
+            "suspended": false
+          }
+        },
+        {
+          "principal": "user:blair.chen@example.com",
+          "userId": "fictional-002",
+          "roles": [
+            "roles/viewer"
+          ],
+          "status": "FAIL",
+          "reason": "MFA enrollment and enforcement disabled.",
+          "evidence": {
+            "isEnrolledIn2Sv": false,
+            "isEnforcedIn2Sv": false,
+            "suspended": false
+          }
+        },
+        {
+          "principal": "user:casey.rivera@example.com",
+          "userId": "fictional-003",
+          "roles": [
+            "roles/owner"
+          ],
+          "status": "PASS",
+          "reason": "MFA enrollment and enforcement are both enabled.",
+          "evidence": {
+            "isEnrolledIn2Sv": true,
+            "isEnforcedIn2Sv": true,
+            "suspended": false
+          }
+        },
+        {
+          "principal": "user:indigo.ellis@example.com",
+          "userId": "fictional-008",
+          "roles": [
+            "roles/viewer"
+          ],
+          "status": "FAIL",
+          "reason": "MFA enforcement disabled.",
+          "evidence": {
+            "isEnrolledIn2Sv": true,
+            "isEnforcedIn2Sv": false,
+            "suspended": false
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "NEW_ADMINISTRATORS",
+      "policyVersion": "new-admins-v1",
+      "snapshotId": "demo-day-1",
+      "resource": "projects/demo-security-project",
+      "sourceObservedAt": "2026-11-15T12:00:00Z",
+      "previousSnapshotId": null,
+      "comparisonStart": null,
+      "trackedRoles": [
+        "roles/owner",
+        "roles/iam.securityAdmin"
+      ],
+      "scope": "Direct human-user grants of the listed roles only; inherited access is not assessed.",
+      "comparisonStatus": "BASELINE",
+      "coverageGaps": [],
+      "excludedPrincipals": [],
+      "results": [
+        {
+          "principal": "user:casey.rivera@example.com",
+          "role": "roles/owner",
+          "status": "BASELINE",
+          "reason": "Existing access recorded; original grant time and approval are unknown.",
+          "presentInCurrentSnapshot": true,
+          "newSincePreviousSnapshot": null,
+          "grantEvents": []
+        }
+      ]
+    },
+    {
+      "controlId": "EDR_COVERAGE",
+      "policyVersion": "edr-v1",
+      "snapshotId": "demo-day-1",
+      "resource": "projects/demo-security-project",
+      "sourceObservedAt": "2026-11-15T12:00:00Z",
+      "maxCheckInAgeSeconds": 86400,
+      "scope": "Inventory devices explicitly marked as requiring EDR.",
+      "excludedDeviceIds": [],
+      "unmatchedEdrDeviceIds": [],
+      "coverageGaps": [],
+      "results": [
+        {
+          "deviceId": "fictional-device-001",
+          "hostname": "demo-gcp-vm-01",
+          "status": "PASS",
+          "reason": "Agent is healthy and reported within 24 hours.",
+          "evidence": {
+            "edrRequired": true,
+            "matchedAgentCount": 1,
+            "agentObservations": [
+              {
+                "deviceId": "fictional-device-001",
+                "agentId": "fictional-agent-001",
+                "status": "healthy",
+                "lastSeenAt": "2026-11-15T11:55:00Z"
+              }
+            ],
+            "checkInAgeSeconds": 300.0
+          }
+        },
+        {
+          "deviceId": "fictional-device-002",
+          "hostname": "demo-laptop-01",
+          "status": "FAIL",
+          "reason": "Required device is absent from the complete EDR observations.",
+          "evidence": {
+            "edrRequired": true,
+            "matchedAgentCount": 0,
+            "agentObservations": [],
+            "checkInAgeSeconds": null
+          }
+        }
+      ]
+    }
+  ],
+  "error": null,
+  "limitations": [
+    "Fictional observations; source completeness is declared, not independently established.",
+    "Source observation/event times differ from actual collection times; demo dates are fixed.",
+    "Local files are not signed or tamper-evident. SHA-256 is a body fingerprint, not authentication.",
+    "Scope exclusions are not approved exceptions. No compliance or approval conclusion is implied.",
+    "Day 2 re-fetches the Day 1 fixture; persistent baseline selection and scheduling are not implemented."
+  ]
+}
