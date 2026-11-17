@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0",
+  "fictional": true,
+  "datasetId": "demo-suspicious",
+  "events": [
+    {
+      "eventId": "suspicious-005",
+      "eventType": "iam_binding_change",
+      "occurredAt": "2026-11-17T09:00:00Z",
+      "actor": "casey.rivera@example.com",
+      "sourceIp": "203.0.113.42",
+      "outcome": "success",
+      "resource": "projects/demo-triage-project",
+      "changeAction": "ADD",
+      "role": "roles/owner",
+      "recipient": "user:blair.chen@example.com"
+    },
+    {
+      "eventId": "suspicious-002",
+      "eventType": "sign_in",
+      "occurredAt": "2026-11-17T08:42:00Z",
+      "actor": "casey.rivera@example.com",
+      "sourceIp": "203.0.113.42",
+      "outcome": "failure"
+    },
+    {
+      "eventId": "suspicious-001",
+      "eventType": "sign_in",
+      "occurredAt": "2026-11-17T08:40:00Z",
+      "actor": "casey.rivera@example.com",
+      "sourceIp": "203.0.113.42",
+      "outcome": "failure"
+    },
+    {
+      "eventId": "suspicious-004",
+      "eventType": "sign_in",
+      "occurredAt": "2026-11-17T08:50:00Z",
+      "actor": "casey.rivera@example.com",
+      "sourceIp": "203.0.113.42",
+      "outcome": "success"
+    },
+    {
+      "eventId": "suspicious-003",
+      "eventType": "sign_in",
+      "occurredAt": "2026-11-17T08:44:00Z",
+      "actor": "casey.rivera@example.com",
+      "sourceIp": "203.0.113.42",
+      "outcome": "failure"
+    },
+    {
+      "eventId": "suspicious-005",
+      "eventType": "iam_binding_change",
+      "occurredAt": "2026-11-17T09:00:00Z",
+      "actor": "casey.rivera@example.com",
+      "sourceIp": "203.0.113.42",
+      "outcome": "success",
+      "resource": "projects/demo-triage-project",
+      "changeAction": "ADD",
+      "role": "roles/owner",
+      "recipient": "user:blair.chen@example.com"
+    },
+    {
+      "eventId": "suspicious-006",
+      "eventType": "iam_binding_change",
+      "occurredAt": "2026-11-17T08:55:00Z",
+      "actor": "devon.patel@example.com",
+      "sourceIp": "192.0.2.25",
+      "outcome": "success",
+      "resource": "projects/demo-triage-project",
+      "changeAction": "ADD",
+      "role": "roles/viewer",
+      "recipient": "user:alex.morgan@example.com"
+    }
+  ]
+}

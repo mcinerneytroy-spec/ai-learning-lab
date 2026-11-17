@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0",
+  "fictional": true,
+  "datasetId": "demo-suspicious",
+  "eventWindow": {
+    "startInclusive": "2026-11-17T08:00:00Z",
+    "endExclusive": "2026-11-17T10:00:00Z"
+  },
+  "declaredCoverage": {
+    "identityEvents": "complete",
+    "iamEvents": "complete",
+    "changeRecords": "complete",
+    "actorBaselines": "complete"
+  },
+  "actorBaselines": [
+    {
+      "actor": "casey.rivera@example.com",
+      "knownSourceCidrs": ["192.0.2.0/24"]
+    },
+    {
+      "actor": "devon.patel@example.com",
+      "knownSourceCidrs": ["192.0.2.0/24"]
+    }
+  ],
+  "changeRecords": []
+}

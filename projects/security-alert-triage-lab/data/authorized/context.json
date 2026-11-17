@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0",
+  "fictional": true,
+  "datasetId": "demo-authorized",
+  "eventWindow": {
+    "startInclusive": "2026-11-17T08:00:00Z",
+    "endExclusive": "2026-11-17T10:00:00Z"
+  },
+  "declaredCoverage": {
+    "identityEvents": "complete",
+    "iamEvents": "complete",
+    "changeRecords": "complete",
+    "actorBaselines": "complete"
+  },
+  "actorBaselines": [
+    {
+      "actor": "casey.rivera@example.com",
+      "knownSourceCidrs": ["192.0.2.0/24"]
+    }
+  ],
+  "changeRecords": [
+    {
+      "changeId": "CHG-DEMO-001",
+      "status": "approved",
+      "approvedAt": "2026-11-17T08:00:00Z",
+      "approvedBy": "devon.patel@example.com",
+      "actor": "casey.rivera@example.com",
+      "recipient": "user:emery.brooks@example.com",
+      "resource": "projects/demo-triage-project",
+      "role": "roles/iam.securityAdmin",
+      "windowStartInclusive": "2026-11-17T08:30:00Z",
+      "windowEndExclusive": "2026-11-17T09:30:00Z",
+      "justification": "Time-limited security administration for a planned maintenance task."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0",
+  "fictional": true,
+  "datasetId": "demo-authorized",
+  "events": [
+    {
+      "eventId": "authorized-001",
+      "eventType": "sign_in",
+      "occurredAt": "2026-11-17T08:50:00Z",
+      "actor": "casey.rivera@example.com",
+      "sourceIp": "192.0.2.20",
+      "outcome": "success"
+    },
+    {
+      "eventId": "authorized-002",
+      "eventType": "iam_binding_change",
+      "occurredAt": "2026-11-17T09:00:00Z",
+      "actor": "casey.rivera@example.com",
+      "sourceIp": "192.0.2.20",
+      "outcome": "success",
+      "resource": "projects/demo-triage-project",
+      "changeAction": "ADD",
+      "role": "roles/iam.securityAdmin",
+      "recipient": "user:emery.brooks@example.com"
+    },
+    {
+      "eventId": "authorized-003",
+      "eventType": "iam_binding_change",
+      "occurredAt": "2026-11-17T09:05:00Z",
+      "actor": "casey.rivera@example.com",
+      "sourceIp": "192.0.2.20",
+      "outcome": "success",
+      "resource": "projects/demo-triage-project",
+      "changeAction": "ADD",
+      "role": "roles/viewer",
+      "recipient": "user:alex.morgan@example.com"
+    }
+  ]
+}
