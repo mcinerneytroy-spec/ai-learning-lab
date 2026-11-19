@@ -1,7 +1,7 @@
 # My Hands-on Learning Journey
 
 Practical projects documenting my learning in Python,
-security automation, and evidence collection.
+security automation, evidence collection, and cloud application development.
 
 ## Projects
 
@@ -11,3 +11,7 @@ security automation, and evidence collection.
 
 - [Security Alert Triage Lab](projects/security-alert-triage-lab/README.md)
   — Python learning project for investigating fictional privileged-access events.
+
+- [Culinary Compass](projects/culinary-compass/README.md)
+  — A live Python/Streamlit dinner-planning website on Google Cloud, with
+  Firestore storage, email-link sign-in, and public setup/deployment notes.
