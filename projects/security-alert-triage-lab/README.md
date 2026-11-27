@@ -1,132 +1,174 @@
 # Security Alert Triage Lab
 
-A local Python portfolio exercise for investigating privileged-access changes.
-It will correlate fictional IAM grants, identity events, actor baselines, and
-approval records, then produce an evidence-linked timeline and triage report.
+A completed local Python demonstration that investigates fictional privileged-role
+grants, correlates identity activity, checks approval context, and writes
+reproducible JSON and Markdown investigation reports. It uses only the standard
+library and makes no external connections or incident-response changes.
 
-This is an independent learning project, with no company data, credentials,
-live API access, paid services, or automatic remediation. All records are invented.
-Development will proceed incrementally, with AI-assisted mentoring and exercises
-to help the learner understand and modify the implementation.
+This independent portfolio project uses invented identities, documentation-range
+IPs, and a normalized lab schema. It was developed incrementally with AI-assisted
+mentoring. It does not connect to a company, SIEM, identity provider, or cloud API.
 
-## Current lesson: define one investigation before coding
+## Inspect the results first
 
-**Question:** Does this successful privileged-role grant need escalation, and
-what observed facts support that decision?
-
-Created so far: project structure, two fictional event datasets, supporting
-context records, and the [investigation specification](docs/SCENARIO.md).
-There is no parser, detection engine, runnable triage command, automated test
-suite, or generated report yet. Expected outcomes below are design targets.
-
-```text
-security-alert-triage-lab/
-├── README.md
-├── .gitignore
-├── data/
-│   ├── suspicious/
-│   │   ├── events.json
-│   │   └── context.json
-│   └── authorized/
-│       ├── events.json
-│       └── context.json
-├── docs/
-│   └── SCENARIO.md
-├── triage/
-│   └── __init__.py
-├── tests/
-│   └── __init__.py
-└── outputs/
-    └── .gitkeep
-```
-
-The package markers contain explanatory text only. `outputs` is reserved for
-future generated reports and is ignored by Git except for its placeholder.
-
-## Two comparison datasets
-
-| Dataset | Available observations | Expected triage direction |
+| Scenario | Observations | Recommendation |
 | --- | --- | --- |
-| suspicious | Three failed sign-ins, then success from an IP outside the actor's known baseline, followed by an Owner grant; no matching supplied approval | Elevated-priority review and escalation for validation; compromise is unconfirmed |
-| authorized | Successful sign-in from a known IP, a Security Admin grant, and a prior approval matching the actor, recipient, project, role, and window | Routine review supported by matching context; no automatic assertion that the account is safe |
+| Suspicious | Three distinct failed sign-ins, then success and an Owner grant from an IP outside the actor's supplied baseline; no matching supplied approval | ELEVATED: escalate for validation |
+| Approval-supported comparison | Successful sign-in from a supplied known network, a Security Admin grant, and matching prior approval | ROUTINE review, with disposition still pending |
+| Failed input | A source cannot be read | FAILED execution, with no completed analysis |
 
-Both datasets include a Viewer grant outside the selected administrative roles.
-The suspicious dataset intentionally contains one exact duplicate grant event
-and out-of-order records. A parser must deduplicate and sort rather than count
-the same grant twice or trust the file's order.
+Browse the [curated fictional reports](examples/README.md) without running code.
+These are real outputs of this local program against synthetic inputs. Neither
+ELEVATED nor ROUTINE is a confirmed incident or a declaration that access is safe.
 
-The approved case is a comparison exercise, not a reason to suppress every grant
-with a ticket. Familiar IPs and approval records can coexist with malicious activity.
-The supplied approval describes temporary intent but does not prove that access
-expires automatically or is later removed.
+## Quickstart
 
-## Planned flow
+Use Python 3.11 or newer. Verified on Python 3.15.2; other versions have not been
+tested. There is no pip-install step, credential setup, or server to start.
 
-```text
-Fictional event JSON + contextual JSON
-        ↓
-Validate, deduplicate, and normalize timestamps
-        ↓
-Find successful ADDs of explicitly tracked privileged roles
-        ↓
-Correlate the granting actor's earlier sign-ins and matching approval records
-        ↓
-Timeline + observed facts + uncertainty + recommended analyst actions
-```
-
-This differs from the existing evidence monitor: the monitor evaluates controls;
-this project investigates event sequences and explains a response decision.
-
-## Data format and limitations
-
-The fixtures use **our normalized lab schema**, not raw Google or identity-provider
-API responses. A future adapter can map Cloud Audit Logs fields such as
-`timestamp`, `protoPayload.authenticationInfo.principalEmail`,
-`protoPayload.requestMetadata.callerIp`, and `protoPayload.resourceName` into
-the common event model. See the [AuditLog reference](https://docs.cloud.google.com/logging/docs/reference/audit/auditlog/rest/Shared.Types/AuditLog)
-and [role-grant examples](https://docs.cloud.google.com/iam/docs/audit-logging/examples-service-accounts).
-Provider-specific policy-delta parsing is not implemented or claimed here.
-
-`sign_in` records simulate a separate identity source, not an assertion that
-Cloud Audit Logs supplies every sign-in. `context.json` holds fictional baseline,
-source coverage declarations, and change records; these are analyst inputs,
-not independently verified truths. No approval status is embedded in the events.
-
-Emails use example.com. IPs use documentation ranges; they are not real device
-addresses, geolocation evidence, reputation results, or an attribution claim.
-All timestamps are fixed UTC values for reproducible tests.
-
-## First exercise
-
-Open the files or check their JSON syntax from this project's folder:
+From your project folder, run:
 
 ```sh
-python3 -m json.tool data/suspicious/events.json
-python3 -m json.tool data/authorized/context.json
+python3 -m triage.analyze --scenario suspicious
+python3 -m triage.analyze --scenario authorized
 ```
 
-Read the suspicious records and answer:
+On the original Mac folder layout, enter the folder first with:
 
-1. Who performed the privileged grant, and who received it?
-2. Which earlier sign-ins should be correlated: the granting actor's or the
-   recipient's? Why?
-3. Does an unmatched source IP prove the actor is malicious?
-4. What evidence would you ask for before recommending access revocation?
+```sh
+cd "$HOME/Documents/ChatGPT/AI Training/security-alert-triage-lab"
+```
 
-JSON objects become Python dictionaries; arrays become lists. `eventId` identifies
-a source event, not an incident. A chronological timeline requires parsing
-`occurredAt` as a timezone-aware datetime and sorting; JSON file order is not time.
+Each run prints a priority summary and the paths to `report.json` and `report.md`
+inside a new `outputs/<UTC-timestamp>_<unique-run-id>/` directory. COMPLETED means
+analysis finished, even if the result requires escalation or has coverage gaps.
+Open Markdown for the narrative and JSON for full evidence and provenance.
 
-## Next lessons
+To demonstrate a failed input, run this with a deliberately nonexistent filename:
 
-1. Implement the parser with tests for required fields, invalid times, exact
-   duplicates, conflicting IDs, and deterministic ordering.
-2. Implement privileged-grant selection and time-bounded correlation, with
-   tests for actor versus recipient, failed operations, and time boundaries.
-3. Match approval context without treating absent context as proof of abuse.
-4. Generate JSON and Markdown case reports, retaining provenance, missing-data
-   warnings, a timeline, analyst questions, and suggested escalation.
-5. Add a response playbook and a reproducible GitHub walkthrough.
+```sh
+python3 -m triage.analyze --events missing-demo-events.json --context data/suspicious/context.json
+```
 
-Python 3.11 or newer is the intended baseline. The first version will use only
-the standard library. No service needs to run for the file-based exercise.
+It saves FAILED reports when storage is available and exits with status 1.
+Successful execution returns 0; it does not assert security. You can override
+`--output-dir` and the self-declared `--analyst-label`. Custom input requires both
+`--events` and `--context`; both must use the documented fictional schema.
+
+## Architecture
+
+```mermaid
+flowchart LR
+    A[Event JSON] --> B[Parser: validate / deduplicate / sort]
+    B --> C[Select privileged grants and correlate actor sign-ins]
+    D[Baseline and approval context] --> E[Context validation and triage policy]
+    C --> E
+    E --> F[JSON evidence and Markdown report]
+```
+
+`analyze.py` captures source bytes and coordinates execution. `parser.py` handles
+schema checks and event provenance. `detection.py` selects grants and builds
+actor-centered time windows. `context.py` returns facts, gaps, and recommendations
+without file or network operations. `reporting.py` saves the output. The earlier
+parser and first-rule commands remain available for learning:
+
+```sh
+python3 -m triage.parser --scenario suspicious
+python3 -m triage.detection --scenario suspicious
+```
+
+Those earlier-stage commands intentionally stop before contextual prioritization
+and do not save reports. Use `triage.analyze` for the complete pipeline.
+
+## Explicit rule: triage-v1
+
+- Scope: successful direct human-user ADDs of `roles/owner` or
+  `roles/iam.securityAdmin` in `projects/demo-triage-project`. Other IAM changes
+  retain IDs and reasons under skipped events; this is not exhaustive IAM analysis.
+- Correlation: the granting actor's sign-ins from 30 minutes before the grant
+  through grant time, inclusive. Never substitute the recipient's sign-ins.
+- Elevated signal: at least three distinct same-actor/IP failures strictly before
+  a successful same-IP sign-in, itself strictly before the grant, within that
+  window, with the grant IP outside a complete, unambiguous supplied baseline.
+- Approval: require approved status, prior approval time, matching actor,
+  recipient, resource and role, and a grant within the approved half-open window.
+  Preserve approval ID, approver, record index, and actual source record.
+- Context gaps prevent ROUTINE handling but do not erase a positive elevated
+  signal. Matching approval never suppresses the elevated signal. Known-IP failure
+  chains still require review. A missing actor baseline is UNKNOWN, not known-safe.
+- ROUTINE requires matching approval, known supplied IP baseline, a preceding
+  successful sign-in, no failure chain, and no detected coverage gap. It is still
+  a recommendation for human review, not automatic closure.
+
+Equal timestamps cannot establish precise ordering. Matching IPs do not prove a
+shared session. Fixed source dates are evaluated against source/context windows,
+not the current clock. Thresholds and network baselines are demonstration choices.
+
+## Evidence and failure handling
+
+Every run records a unique ID, policy versions, actual UTC analysis times, source
+read times, original input bytes (Base64), SHA-256 fingerprints, parsed inputs,
+a deduplicated timeline, and evidence-linked cases. Original event field values
+and zero-based source positions are retained. No original source file is changed.
+A baseline/change-record match references the corresponding context record index.
+
+Markdown includes the timeline, actor/recipient/role/resource, grant time, reasons,
+approval details, coverage gaps, suggested actions, and a pointer into the JSON.
+Untrusted display values are escaped; JSON preserves the original values.
+`analystDisposition` stays PENDING and `incidentVerdict` stays UNCONFIRMED.
+
+Normal read/validation failures retain a FAILED run and any readable source
+bodies. The program checkpoints RUNNING evidence before analysis. Each output
+file is written atomically, but the package is not a transactional or tamper-proof
+store. Storage failures or interruption may leave partial/RUNNING artifacts.
+
+## Tests
+
+```sh
+python3 -m unittest discover -s tests -v
+```
+
+Expected: 60 tests and OK. Coverage includes schema validation, duplicate and
+conflicting IDs, timezone/interval boundaries, actor-versus-recipient correlation,
+failed/removed/untracked grants, sequence order and source IP, incomplete context,
+approval scope and timing, input preservation, Markdown escaping, failed-run
+retention, output-write failure, and real file-to-report execution for both cases.
+Tests run locally with temporary files and require no network access.
+
+## Learn, demonstrate, and update GitHub
+
+- [Finished-project guide](docs/FINISHED_PROJECT_GUIDE.md): run commands, output
+  interpretation, code explanations, and an in-memory learning experiment.
+- [Parser walkthrough](docs/PARSER_WALKTHROUGH.md): dictionaries, loops, errors,
+  JSON parsing, datetime handling, and tests from the initial lesson.
+- [Detection walkthrough](docs/DETECTION_WALKTHROUGH.md): grant selection and actor
+  correlation from the second lesson.
+- [Investigation specification](docs/SCENARIO.md): scenario design and expected facts.
+- [Response playbook](docs/RESPONSE_PLAYBOOK.md): human verification, escalation,
+  containment decision boundaries, and disposition considerations.
+- [GitHub update guide](docs/GITHUB_UPDATE.md): replace the earlier project snapshot
+  inside your existing learning repository. Nothing is uploaded automatically.
+
+```text
+triage/     Parser, correlation, context policy, coordinator, report writer
+tests/      Unit, negative, boundary, and end-to-end tests
+data/       Fictional event and context datasets
+docs/       Learning guides, investigation specification, and response playbook
+examples/   Curated synthetic reports suitable for portfolio review
+outputs/    Generated local runs, ignored by Git
+```
+
+## Boundaries
+
+This finishes the planned local lab. Real provider adapters, authenticated users,
+live ingestion, queueing, independent completeness checks, production retention,
+reviewer workflow, continuous monitoring, and remediation are outside this version.
+The fixture schema is not a raw Google/identity-provider API format. Group,
+conditional, inherited, custom-role, and impersonation paths are not analyzed.
+
+The program trusts supplied source declarations and cannot prove approval
+integrity, approver authority, baseline quality, or absence of omitted events.
+It does not determine actual MFA state or effective access. Base64 is encoding,
+not encryption; adjacent hashes and self-declared analyst labels do not authenticate
+source or reviewer identity. A matching temporary-access ticket does not prove
+expiry/removal. No claim of SOC 2 compliance or production incident readiness is made.

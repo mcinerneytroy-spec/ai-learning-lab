@@ -1,0 +1,399 @@
+{
+  "reportSchemaVersion": "1.0",
+  "fictional": true,
+  "runId": "97f1b9517497481ebe02506aa07547fb",
+  "runStatus": "COMPLETED",
+  "analystLabel": "demo-analyst",
+  "analysisStartedAt": "2026-11-20T18:51:54.477590+00:00",
+  "analysisCompletedAt": "2026-11-20T18:51:54.478528+00:00",
+  "sources": [
+    {
+      "kind": "events",
+      "fileName": "events.json",
+      "readStartedAt": "2026-11-20T18:51:54.477785+00:00",
+      "rawBodyBase64": "ewogICJzY2hlbWFWZXJzaW9uIjogIjEuMCIsCiAgImZpY3Rpb25hbCI6IHRydWUsCiAgImRhdGFzZXRJZCI6ICJkZW1vLXN1c3BpY2lvdXMiLAogICJldmVudHMiOiBbCiAgICB7CiAgICAgICJldmVudElkIjogInN1c3BpY2lvdXMtMDA1IiwKICAgICAgImV2ZW50VHlwZSI6ICJpYW1fYmluZGluZ19jaGFuZ2UiLAogICAgICAib2NjdXJyZWRBdCI6ICIyMDI2LTExLTE3VDA5OjAwOjAwWiIsCiAgICAgICJhY3RvciI6ICJjYXNleS5yaXZlcmFAZXhhbXBsZS5jb20iLAogICAgICAic291cmNlSXAiOiAiMjAzLjAuMTEzLjQyIiwKICAgICAgIm91dGNvbWUiOiAic3VjY2VzcyIsCiAgICAgICJyZXNvdXJjZSI6ICJwcm9qZWN0cy9kZW1vLXRyaWFnZS1wcm9qZWN0IiwKICAgICAgImNoYW5nZUFjdGlvbiI6ICJBREQiLAogICAgICAicm9sZSI6ICJyb2xlcy9vd25lciIsCiAgICAgICJyZWNpcGllbnQiOiAidXNlcjpibGFpci5jaGVuQGV4YW1wbGUuY29tIgogICAgfSwKICAgIHsKICAgICAgImV2ZW50SWQiOiAic3VzcGljaW91cy0wMDIiLAogICAgICAiZXZlbnRUeXBlIjogInNpZ25faW4iLAogICAgICAib2NjdXJyZWRBdCI6ICIyMDI2LTExLTE3VDA4OjQyOjAwWiIsCiAgICAgICJhY3RvciI6ICJjYXNleS5yaXZlcmFAZXhhbXBsZS5jb20iLAogICAgICAic291cmNlSXAiOiAiMjAzLjAuMTEzLjQyIiwKICAgICAgIm91dGNvbWUiOiAiZmFpbHVyZSIKICAgIH0sCiAgICB7CiAgICAgICJldmVudElkIjogInN1c3BpY2lvdXMtMDAxIiwKICAgICAgImV2ZW50VHlwZSI6ICJzaWduX2luIiwKICAgICAgIm9jY3VycmVkQXQiOiAiMjAyNi0xMS0xN1QwODo0MDowMFoiLAogICAgICAiYWN0b3IiOiAiY2FzZXkucml2ZXJhQGV4YW1wbGUuY29tIiwKICAgICAgInNvdXJjZUlwIjogIjIwMy4wLjExMy40MiIsCiAgICAgICJvdXRjb21lIjogImZhaWx1cmUiCiAgICB9LAogICAgewogICAgICAiZXZlbnRJZCI6ICJzdXNwaWNpb3VzLTAwNCIsCiAgICAgICJldmVudFR5cGUiOiAic2lnbl9pbiIsCiAgICAgICJvY2N1cnJlZEF0IjogIjIwMjYtMTEtMTdUMDg6NTA6MDBaIiwKICAgICAgImFjdG9yIjogImNhc2V5LnJpdmVyYUBleGFtcGxlLmNvbSIsCiAgICAgICJzb3VyY2VJcCI6ICIyMDMuMC4xMTMuNDIiLAogICAgICAib3V0Y29tZSI6ICJzdWNjZXNzIgogICAgfSwKICAgIHsKICAgICAgImV2ZW50SWQiOiAic3VzcGljaW91cy0wMDMiLAogICAgICAiZXZlbnRUeXBlIjogInNpZ25faW4iLAogICAgICAib2NjdXJyZWRBdCI6ICIyMDI2LTExLTE3VDA4OjQ0OjAwWiIsCiAgICAgICJhY3RvciI6ICJjYXNleS5yaXZlcmFAZXhhbXBsZS5jb20iLAogICAgICAic291cmNlSXAiOiAiMjAzLjAuMTEzLjQyIiwKICAgICAgIm91dGNvbWUiOiAiZmFpbHVyZSIKICAgIH0sCiAgICB7CiAgICAgICJldmVudElkIjogInN1c3BpY2lvdXMtMDA1IiwKICAgICAgImV2ZW50VHlwZSI6ICJpYW1fYmluZGluZ19jaGFuZ2UiLAogICAgICAib2NjdXJyZWRBdCI6ICIyMDI2LTExLTE3VDA5OjAwOjAwWiIsCiAgICAgICJhY3RvciI6ICJjYXNleS5yaXZlcmFAZXhhbXBsZS5jb20iLAogICAgICAic291cmNlSXAiOiAiMjAzLjAuMTEzLjQyIiwKICAgICAgIm91dGNvbWUiOiAic3VjY2VzcyIsCiAgICAgICJyZXNvdXJjZSI6ICJwcm9qZWN0cy9kZW1vLXRyaWFnZS1wcm9qZWN0IiwKICAgICAgImNoYW5nZUFjdGlvbiI6ICJBREQiLAogICAgICAicm9sZSI6ICJyb2xlcy9vd25lciIsCiAgICAgICJyZWNpcGllbnQiOiAidXNlcjpibGFpci5jaGVuQGV4YW1wbGUuY29tIgogICAgfSwKICAgIHsKICAgICAgImV2ZW50SWQiOiAic3VzcGljaW91cy0wMDYiLAogICAgICAiZXZlbnRUeXBlIjogImlhbV9iaW5kaW5nX2NoYW5nZSIsCiAgICAgICJvY2N1cnJlZEF0IjogIjIwMjYtMTEtMTdUMDg6NTU6MDBaIiwKICAgICAgImFjdG9yIjogImRldm9uLnBhdGVsQGV4YW1wbGUuY29tIiwKICAgICAgInNvdXJjZUlwIjogIjE5Mi4wLjIuMjUiLAogICAgICAib3V0Y29tZSI6ICJzdWNjZXNzIiwKICAgICAgInJlc291cmNlIjogInByb2plY3RzL2RlbW8tdHJpYWdlLXByb2plY3QiLAogICAgICAiY2hhbmdlQWN0aW9uIjogIkFERCIsCiAgICAgICJyb2xlIjogInJvbGVzL3ZpZXdlciIsCiAgICAgICJyZWNpcGllbnQiOiAidXNlcjphbGV4Lm1vcmdhbkBleGFtcGxlLmNvbSIKICAgIH0KICBdCn0K",
+      "sha256": "2fd5b43a667184f048c4e65df27304f0f35d75982d243c53f06ce3ac45fe3318",
+      "parsedInput": {
+        "schemaVersion": "1.0",
+        "fictional": true,
+        "datasetId": "demo-suspicious",
+        "events": [
+          {
+            "eventId": "suspicious-005",
+            "eventType": "iam_binding_change",
+            "occurredAt": "2026-11-17T09:00:00Z",
+            "actor": "casey.rivera@example.com",
+            "sourceIp": "203.0.113.42",
+            "outcome": "success",
+            "resource": "projects/demo-triage-project",
+            "changeAction": "ADD",
+            "role": "roles/owner",
+            "recipient": "user:blair.chen@example.com"
+          },
+          {
+            "eventId": "suspicious-002",
+            "eventType": "sign_in",
+            "occurredAt": "2026-11-17T08:42:00Z",
+            "actor": "casey.rivera@example.com",
+            "sourceIp": "203.0.113.42",
+            "outcome": "failure"
+          },
+          {
+            "eventId": "suspicious-001",
+            "eventType": "sign_in",
+            "occurredAt": "2026-11-17T08:40:00Z",
+            "actor": "casey.rivera@example.com",
+            "sourceIp": "203.0.113.42",
+            "outcome": "failure"
+          },
+          {
+            "eventId": "suspicious-004",
+            "eventType": "sign_in",
+            "occurredAt": "2026-11-17T08:50:00Z",
+            "actor": "casey.rivera@example.com",
+            "sourceIp": "203.0.113.42",
+            "outcome": "success"
+          },
+          {
+            "eventId": "suspicious-003",
+            "eventType": "sign_in",
+            "occurredAt": "2026-11-17T08:44:00Z",
+            "actor": "casey.rivera@example.com",
+            "sourceIp": "203.0.113.42",
+            "outcome": "failure"
+          },
+          {
+            "eventId": "suspicious-005",
+            "eventType": "iam_binding_change",
+            "occurredAt": "2026-11-17T09:00:00Z",
+            "actor": "casey.rivera@example.com",
+            "sourceIp": "203.0.113.42",
+            "outcome": "success",
+            "resource": "projects/demo-triage-project",
+            "changeAction": "ADD",
+            "role": "roles/owner",
+            "recipient": "user:blair.chen@example.com"
+          },
+          {
+            "eventId": "suspicious-006",
+            "eventType": "iam_binding_change",
+            "occurredAt": "2026-11-17T08:55:00Z",
+            "actor": "devon.patel@example.com",
+            "sourceIp": "192.0.2.25",
+            "outcome": "success",
+            "resource": "projects/demo-triage-project",
+            "changeAction": "ADD",
+            "role": "roles/viewer",
+            "recipient": "user:alex.morgan@example.com"
+          }
+        ]
+      },
+      "readCompletedAt": "2026-11-20T18:51:54.477934+00:00"
+    },
+    {
+      "kind": "context",
+      "fileName": "context.json",
+      "readStartedAt": "2026-11-20T18:51:54.478114+00:00",
+      "rawBodyBase64": "ewogICJzY2hlbWFWZXJzaW9uIjogIjEuMCIsCiAgImZpY3Rpb25hbCI6IHRydWUsCiAgImRhdGFzZXRJZCI6ICJkZW1vLXN1c3BpY2lvdXMiLAogICJldmVudFdpbmRvdyI6IHsKICAgICJzdGFydEluY2x1c2l2ZSI6ICIyMDI2LTExLTE3VDA4OjAwOjAwWiIsCiAgICAiZW5kRXhjbHVzaXZlIjogIjIwMjYtMTEtMTdUMTA6MDA6MDBaIgogIH0sCiAgImRlY2xhcmVkQ292ZXJhZ2UiOiB7CiAgICAiaWRlbnRpdHlFdmVudHMiOiAiY29tcGxldGUiLAogICAgImlhbUV2ZW50cyI6ICJjb21wbGV0ZSIsCiAgICAiY2hhbmdlUmVjb3JkcyI6ICJjb21wbGV0ZSIsCiAgICAiYWN0b3JCYXNlbGluZXMiOiAiY29tcGxldGUiCiAgfSwKICAiYWN0b3JCYXNlbGluZXMiOiBbCiAgICB7CiAgICAgICJhY3RvciI6ICJjYXNleS5yaXZlcmFAZXhhbXBsZS5jb20iLAogICAgICAia25vd25Tb3VyY2VDaWRycyI6IFsiMTkyLjAuMi4wLzI0Il0KICAgIH0sCiAgICB7CiAgICAgICJhY3RvciI6ICJkZXZvbi5wYXRlbEBleGFtcGxlLmNvbSIsCiAgICAgICJrbm93blNvdXJjZUNpZHJzIjogWyIxOTIuMC4yLjAvMjQiXQogICAgfQogIF0sCiAgImNoYW5nZVJlY29yZHMiOiBbXQp9Cg==",
+      "sha256": "93b7929ae88d43b862eaabe066ec286f7536c666571700f218c11c0b8fa8cca1",
+      "parsedInput": {
+        "schemaVersion": "1.0",
+        "fictional": true,
+        "datasetId": "demo-suspicious",
+        "eventWindow": {
+          "startInclusive": "2026-11-17T08:00:00Z",
+          "endExclusive": "2026-11-17T10:00:00Z"
+        },
+        "declaredCoverage": {
+          "identityEvents": "complete",
+          "iamEvents": "complete",
+          "changeRecords": "complete",
+          "actorBaselines": "complete"
+        },
+        "actorBaselines": [
+          {
+            "actor": "casey.rivera@example.com",
+            "knownSourceCidrs": [
+              "192.0.2.0/24"
+            ]
+          },
+          {
+            "actor": "devon.patel@example.com",
+            "knownSourceCidrs": [
+              "192.0.2.0/24"
+            ]
+          }
+        ],
+        "changeRecords": []
+      },
+      "readCompletedAt": "2026-11-20T18:51:54.478196+00:00"
+    }
+  ],
+  "analysis": {
+    "datasetId": "demo-suspicious",
+    "policyVersion": "triage-v1",
+    "correlationRuleVersion": "privileged-grant-correlation-v1",
+    "lookbackMinutes": 30,
+    "failedSignInThreshold": 3,
+    "trackedRoles": [
+      "roles/owner",
+      "roles/iam.securityAdmin"
+    ],
+    "resource": "projects/demo-triage-project",
+    "cases": [
+      {
+        "status": "REVIEW",
+        "reason": "Successful tracked administrator grant; sign-in context gathered for review.",
+        "grant": {
+          "record": {
+            "eventId": "suspicious-005",
+            "eventType": "iam_binding_change",
+            "occurredAt": "2026-11-17T09:00:00Z",
+            "actor": "casey.rivera@example.com",
+            "sourceIp": "203.0.113.42",
+            "outcome": "success",
+            "resource": "projects/demo-triage-project",
+            "changeAction": "ADD",
+            "role": "roles/owner",
+            "recipient": "user:blair.chen@example.com"
+          },
+          "occurredAtUtc": "2026-11-17T09:00:00Z",
+          "sourceIpNormalized": "203.0.113.42",
+          "sourceRecordIndices": [
+            0,
+            5
+          ]
+        },
+        "windowStartInclusive": "2026-11-17T08:30:00Z",
+        "windowEndInclusive": "2026-11-17T09:00:00Z",
+        "actorSignIns": [
+          {
+            "record": {
+              "eventId": "suspicious-001",
+              "eventType": "sign_in",
+              "occurredAt": "2026-11-17T08:40:00Z",
+              "actor": "casey.rivera@example.com",
+              "sourceIp": "203.0.113.42",
+              "outcome": "failure"
+            },
+            "occurredAtUtc": "2026-11-17T08:40:00Z",
+            "sourceIpNormalized": "203.0.113.42",
+            "sourceRecordIndices": [
+              2
+            ],
+            "sameSourceIpAsGrant": true,
+            "sameTimeAsGrant": false
+          },
+          {
+            "record": {
+              "eventId": "suspicious-002",
+              "eventType": "sign_in",
+              "occurredAt": "2026-11-17T08:42:00Z",
+              "actor": "casey.rivera@example.com",
+              "sourceIp": "203.0.113.42",
+              "outcome": "failure"
+            },
+            "occurredAtUtc": "2026-11-17T08:42:00Z",
+            "sourceIpNormalized": "203.0.113.42",
+            "sourceRecordIndices": [
+              1
+            ],
+            "sameSourceIpAsGrant": true,
+            "sameTimeAsGrant": false
+          },
+          {
+            "record": {
+              "eventId": "suspicious-003",
+              "eventType": "sign_in",
+              "occurredAt": "2026-11-17T08:44:00Z",
+              "actor": "casey.rivera@example.com",
+              "sourceIp": "203.0.113.42",
+              "outcome": "failure"
+            },
+            "occurredAtUtc": "2026-11-17T08:44:00Z",
+            "sourceIpNormalized": "203.0.113.42",
+            "sourceRecordIndices": [
+              4
+            ],
+            "sameSourceIpAsGrant": true,
+            "sameTimeAsGrant": false
+          },
+          {
+            "record": {
+              "eventId": "suspicious-004",
+              "eventType": "sign_in",
+              "occurredAt": "2026-11-17T08:50:00Z",
+              "actor": "casey.rivera@example.com",
+              "sourceIp": "203.0.113.42",
+              "outcome": "success"
+            },
+            "occurredAtUtc": "2026-11-17T08:50:00Z",
+            "sourceIpNormalized": "203.0.113.42",
+            "sourceRecordIndices": [
+              3
+            ],
+            "sameSourceIpAsGrant": true,
+            "sameTimeAsGrant": false
+          }
+        ],
+        "failedSignInCount": 3,
+        "successfulSignInCount": 1,
+        "approvalStatus": "NOT_FOUND_IN_SUPPLIED_RECORDS",
+        "priority": "ELEVATED",
+        "contextCoverage": "DECLARED_COMPLETE",
+        "caseId": "demo-suspicious:suspicious-005",
+        "recommendation": "ESCALATE_FOR_VALIDATION",
+        "priorityReason": "Repeated same-actor/IP failures preceded a successful sign-in and privileged grant outside the supplied IP baseline.",
+        "matchingApprovals": [],
+        "ipFamiliarity": "OUTSIDE_SUPPLIED_BASELINE",
+        "baselineContextIndices": [
+          0
+        ],
+        "signalSequences": [
+          {
+            "failureEventIds": [
+              "suspicious-001",
+              "suspicious-002",
+              "suspicious-003"
+            ],
+            "successEventId": "suspicious-004",
+            "grantEventId": "suspicious-005"
+          }
+        ],
+        "elevatedSignalObserved": true,
+        "coverageGaps": [],
+        "incidentVerdict": "UNCONFIRMED",
+        "analystDisposition": "PENDING",
+        "nextActions": [
+          "Preserve original event/context files and validate source coverage.",
+          "Verify the change with the actor and approver through a trusted channel.",
+          "Inspect identity sessions, MFA/device context, effective access, and recipient activity.",
+          "Escalate suspected active abuse to the incident lead; obtain authorization for containment.",
+          "For temporary access, verify expiry or removal separately; an approval does not remove access."
+        ]
+      }
+    ],
+    "coverageGaps": [],
+    "skippedIamEvents": [
+      {
+        "eventId": "suspicious-006",
+        "reason": "Role is not in the tracked administrator-role list."
+      }
+    ],
+    "timeline": {
+      "datasetId": "demo-suspicious",
+      "inputRecordCount": 7,
+      "uniqueEventCount": 6,
+      "duplicateRecordCount": 1,
+      "events": [
+        {
+          "record": {
+            "eventId": "suspicious-001",
+            "eventType": "sign_in",
+            "occurredAt": "2026-11-17T08:40:00Z",
+            "actor": "casey.rivera@example.com",
+            "sourceIp": "203.0.113.42",
+            "outcome": "failure"
+          },
+          "occurredAtUtc": "2026-11-17T08:40:00Z",
+          "sourceIpNormalized": "203.0.113.42",
+          "sourceRecordIndices": [
+            2
+          ]
+        },
+        {
+          "record": {
+            "eventId": "suspicious-002",
+            "eventType": "sign_in",
+            "occurredAt": "2026-11-17T08:42:00Z",
+            "actor": "casey.rivera@example.com",
+            "sourceIp": "203.0.113.42",
+            "outcome": "failure"
+          },
+          "occurredAtUtc": "2026-11-17T08:42:00Z",
+          "sourceIpNormalized": "203.0.113.42",
+          "sourceRecordIndices": [
+            1
+          ]
+        },
+        {
+          "record": {
+            "eventId": "suspicious-003",
+            "eventType": "sign_in",
+            "occurredAt": "2026-11-17T08:44:00Z",
+            "actor": "casey.rivera@example.com",
+            "sourceIp": "203.0.113.42",
+            "outcome": "failure"
+          },
+          "occurredAtUtc": "2026-11-17T08:44:00Z",
+          "sourceIpNormalized": "203.0.113.42",
+          "sourceRecordIndices": [
+            4
+          ]
+        },
+        {
+          "record": {
+            "eventId": "suspicious-004",
+            "eventType": "sign_in",
+            "occurredAt": "2026-11-17T08:50:00Z",
+            "actor": "casey.rivera@example.com",
+            "sourceIp": "203.0.113.42",
+            "outcome": "success"
+          },
+          "occurredAtUtc": "2026-11-17T08:50:00Z",
+          "sourceIpNormalized": "203.0.113.42",
+          "sourceRecordIndices": [
+            3
+          ]
+        },
+        {
+          "record": {
+            "eventId": "suspicious-006",
+            "eventType": "iam_binding_change",
+            "occurredAt": "2026-11-17T08:55:00Z",
+            "actor": "devon.patel@example.com",
+            "sourceIp": "192.0.2.25",
+            "outcome": "success",
+            "resource": "projects/demo-triage-project",
+            "changeAction": "ADD",
+            "role": "roles/viewer",
+            "recipient": "user:alex.morgan@example.com"
+          },
+          "occurredAtUtc": "2026-11-17T08:55:00Z",
+          "sourceIpNormalized": "192.0.2.25",
+          "sourceRecordIndices": [
+            6
+          ]
+        },
+        {
+          "record": {
+            "eventId": "suspicious-005",
+            "eventType": "iam_binding_change",
+            "occurredAt": "2026-11-17T09:00:00Z",
+            "actor": "casey.rivera@example.com",
+            "sourceIp": "203.0.113.42",
+            "outcome": "success",
+            "resource": "projects/demo-triage-project",
+            "changeAction": "ADD",
+            "role": "roles/owner",
+            "recipient": "user:blair.chen@example.com"
+          },
+          "occurredAtUtc": "2026-11-17T09:00:00Z",
+          "sourceIpNormalized": "203.0.113.42",
+          "sourceRecordIndices": [
+            0,
+            5
+          ]
+        }
+      ]
+    },
+    "limitations": [
+      "Fictional normalized inputs; no provider APIs or authentic source attestations.",
+      "Source coverage and approvals are supplied assumptions, not independently established facts.",
+      "Priority is a reproducible review recommendation, not a compromise or authorization verdict.",
+      "The named roles/project/direct-user scope does not cover every privilege or attack path.",
+      "Matching IPs do not prove a shared session; equal timestamps cannot prove sequence."
+    ]
+  },
+  "error": null
+}

@@ -1,0 +1,280 @@
+{
+  "reportSchemaVersion": "1.0",
+  "fictional": true,
+  "runId": "44b12277ce0844c1a9a65e7b893dfdfd",
+  "runStatus": "COMPLETED",
+  "analystLabel": "demo-analyst",
+  "analysisStartedAt": "2026-11-20T18:51:54.479216+00:00",
+  "analysisCompletedAt": "2026-11-20T18:51:54.479938+00:00",
+  "sources": [
+    {
+      "kind": "events",
+      "fileName": "events.json",
+      "readStartedAt": "2026-11-20T18:51:54.479338+00:00",
+      "rawBodyBase64": "ewogICJzY2hlbWFWZXJzaW9uIjogIjEuMCIsCiAgImZpY3Rpb25hbCI6IHRydWUsCiAgImRhdGFzZXRJZCI6ICJkZW1vLWF1dGhvcml6ZWQiLAogICJldmVudHMiOiBbCiAgICB7CiAgICAgICJldmVudElkIjogImF1dGhvcml6ZWQtMDAxIiwKICAgICAgImV2ZW50VHlwZSI6ICJzaWduX2luIiwKICAgICAgIm9jY3VycmVkQXQiOiAiMjAyNi0xMS0xN1QwODo1MDowMFoiLAogICAgICAiYWN0b3IiOiAiY2FzZXkucml2ZXJhQGV4YW1wbGUuY29tIiwKICAgICAgInNvdXJjZUlwIjogIjE5Mi4wLjIuMjAiLAogICAgICAib3V0Y29tZSI6ICJzdWNjZXNzIgogICAgfSwKICAgIHsKICAgICAgImV2ZW50SWQiOiAiYXV0aG9yaXplZC0wMDIiLAogICAgICAiZXZlbnRUeXBlIjogImlhbV9iaW5kaW5nX2NoYW5nZSIsCiAgICAgICJvY2N1cnJlZEF0IjogIjIwMjYtMTEtMTdUMDk6MDA6MDBaIiwKICAgICAgImFjdG9yIjogImNhc2V5LnJpdmVyYUBleGFtcGxlLmNvbSIsCiAgICAgICJzb3VyY2VJcCI6ICIxOTIuMC4yLjIwIiwKICAgICAgIm91dGNvbWUiOiAic3VjY2VzcyIsCiAgICAgICJyZXNvdXJjZSI6ICJwcm9qZWN0cy9kZW1vLXRyaWFnZS1wcm9qZWN0IiwKICAgICAgImNoYW5nZUFjdGlvbiI6ICJBREQiLAogICAgICAicm9sZSI6ICJyb2xlcy9pYW0uc2VjdXJpdHlBZG1pbiIsCiAgICAgICJyZWNpcGllbnQiOiAidXNlcjplbWVyeS5icm9va3NAZXhhbXBsZS5jb20iCiAgICB9LAogICAgewogICAgICAiZXZlbnRJZCI6ICJhdXRob3JpemVkLTAwMyIsCiAgICAgICJldmVudFR5cGUiOiAiaWFtX2JpbmRpbmdfY2hhbmdlIiwKICAgICAgIm9jY3VycmVkQXQiOiAiMjAyNi0xMS0xN1QwOTowNTowMFoiLAogICAgICAiYWN0b3IiOiAiY2FzZXkucml2ZXJhQGV4YW1wbGUuY29tIiwKICAgICAgInNvdXJjZUlwIjogIjE5Mi4wLjIuMjAiLAogICAgICAib3V0Y29tZSI6ICJzdWNjZXNzIiwKICAgICAgInJlc291cmNlIjogInByb2plY3RzL2RlbW8tdHJpYWdlLXByb2plY3QiLAogICAgICAiY2hhbmdlQWN0aW9uIjogIkFERCIsCiAgICAgICJyb2xlIjogInJvbGVzL3ZpZXdlciIsCiAgICAgICJyZWNpcGllbnQiOiAidXNlcjphbGV4Lm1vcmdhbkBleGFtcGxlLmNvbSIKICAgIH0KICBdCn0K",
+      "sha256": "7d61f7fdd99ba666135b969f5207974e8d141e066bedb91dbe420aaf7c0dec1a",
+      "parsedInput": {
+        "schemaVersion": "1.0",
+        "fictional": true,
+        "datasetId": "demo-authorized",
+        "events": [
+          {
+            "eventId": "authorized-001",
+            "eventType": "sign_in",
+            "occurredAt": "2026-11-17T08:50:00Z",
+            "actor": "casey.rivera@example.com",
+            "sourceIp": "192.0.2.20",
+            "outcome": "success"
+          },
+          {
+            "eventId": "authorized-002",
+            "eventType": "iam_binding_change",
+            "occurredAt": "2026-11-17T09:00:00Z",
+            "actor": "casey.rivera@example.com",
+            "sourceIp": "192.0.2.20",
+            "outcome": "success",
+            "resource": "projects/demo-triage-project",
+            "changeAction": "ADD",
+            "role": "roles/iam.securityAdmin",
+            "recipient": "user:emery.brooks@example.com"
+          },
+          {
+            "eventId": "authorized-003",
+            "eventType": "iam_binding_change",
+            "occurredAt": "2026-11-17T09:05:00Z",
+            "actor": "casey.rivera@example.com",
+            "sourceIp": "192.0.2.20",
+            "outcome": "success",
+            "resource": "projects/demo-triage-project",
+            "changeAction": "ADD",
+            "role": "roles/viewer",
+            "recipient": "user:alex.morgan@example.com"
+          }
+        ]
+      },
+      "readCompletedAt": "2026-11-20T18:51:54.479430+00:00"
+    },
+    {
+      "kind": "context",
+      "fileName": "context.json",
+      "readStartedAt": "2026-11-20T18:51:54.479565+00:00",
+      "rawBodyBase64": "ewogICJzY2hlbWFWZXJzaW9uIjogIjEuMCIsCiAgImZpY3Rpb25hbCI6IHRydWUsCiAgImRhdGFzZXRJZCI6ICJkZW1vLWF1dGhvcml6ZWQiLAogICJldmVudFdpbmRvdyI6IHsKICAgICJzdGFydEluY2x1c2l2ZSI6ICIyMDI2LTExLTE3VDA4OjAwOjAwWiIsCiAgICAiZW5kRXhjbHVzaXZlIjogIjIwMjYtMTEtMTdUMTA6MDA6MDBaIgogIH0sCiAgImRlY2xhcmVkQ292ZXJhZ2UiOiB7CiAgICAiaWRlbnRpdHlFdmVudHMiOiAiY29tcGxldGUiLAogICAgImlhbUV2ZW50cyI6ICJjb21wbGV0ZSIsCiAgICAiY2hhbmdlUmVjb3JkcyI6ICJjb21wbGV0ZSIsCiAgICAiYWN0b3JCYXNlbGluZXMiOiAiY29tcGxldGUiCiAgfSwKICAiYWN0b3JCYXNlbGluZXMiOiBbCiAgICB7CiAgICAgICJhY3RvciI6ICJjYXNleS5yaXZlcmFAZXhhbXBsZS5jb20iLAogICAgICAia25vd25Tb3VyY2VDaWRycyI6IFsiMTkyLjAuMi4wLzI0Il0KICAgIH0KICBdLAogICJjaGFuZ2VSZWNvcmRzIjogWwogICAgewogICAgICAiY2hhbmdlSWQiOiAiQ0hHLURFTU8tMDAxIiwKICAgICAgInN0YXR1cyI6ICJhcHByb3ZlZCIsCiAgICAgICJhcHByb3ZlZEF0IjogIjIwMjYtMTEtMTdUMDg6MDA6MDBaIiwKICAgICAgImFwcHJvdmVkQnkiOiAiZGV2b24ucGF0ZWxAZXhhbXBsZS5jb20iLAogICAgICAiYWN0b3IiOiAiY2FzZXkucml2ZXJhQGV4YW1wbGUuY29tIiwKICAgICAgInJlY2lwaWVudCI6ICJ1c2VyOmVtZXJ5LmJyb29rc0BleGFtcGxlLmNvbSIsCiAgICAgICJyZXNvdXJjZSI6ICJwcm9qZWN0cy9kZW1vLXRyaWFnZS1wcm9qZWN0IiwKICAgICAgInJvbGUiOiAicm9sZXMvaWFtLnNlY3VyaXR5QWRtaW4iLAogICAgICAid2luZG93U3RhcnRJbmNsdXNpdmUiOiAiMjAyNi0xMS0xN1QwODozMDowMFoiLAogICAgICAid2luZG93RW5kRXhjbHVzaXZlIjogIjIwMjYtMTEtMTdUMDk6MzA6MDBaIiwKICAgICAgImp1c3RpZmljYXRpb24iOiAiVGltZS1saW1pdGVkIHNlY3VyaXR5IGFkbWluaXN0cmF0aW9uIGZvciBhIHBsYW5uZWQgbWFpbnRlbmFuY2UgdGFzay4iCiAgICB9CiAgXQp9Cg==",
+      "sha256": "78d3a5bd47d69358874d654fbb53f539b42be28a4642ba800392c8a55ecc7bd3",
+      "parsedInput": {
+        "schemaVersion": "1.0",
+        "fictional": true,
+        "datasetId": "demo-authorized",
+        "eventWindow": {
+          "startInclusive": "2026-11-17T08:00:00Z",
+          "endExclusive": "2026-11-17T10:00:00Z"
+        },
+        "declaredCoverage": {
+          "identityEvents": "complete",
+          "iamEvents": "complete",
+          "changeRecords": "complete",
+          "actorBaselines": "complete"
+        },
+        "actorBaselines": [
+          {
+            "actor": "casey.rivera@example.com",
+            "knownSourceCidrs": [
+              "192.0.2.0/24"
+            ]
+          }
+        ],
+        "changeRecords": [
+          {
+            "changeId": "CHG-DEMO-001",
+            "status": "approved",
+            "approvedAt": "2026-11-17T08:00:00Z",
+            "approvedBy": "devon.patel@example.com",
+            "actor": "casey.rivera@example.com",
+            "recipient": "user:emery.brooks@example.com",
+            "resource": "projects/demo-triage-project",
+            "role": "roles/iam.securityAdmin",
+            "windowStartInclusive": "2026-11-17T08:30:00Z",
+            "windowEndExclusive": "2026-11-17T09:30:00Z",
+            "justification": "Time-limited security administration for a planned maintenance task."
+          }
+        ]
+      },
+      "readCompletedAt": "2026-11-20T18:51:54.479690+00:00"
+    }
+  ],
+  "analysis": {
+    "datasetId": "demo-authorized",
+    "policyVersion": "triage-v1",
+    "correlationRuleVersion": "privileged-grant-correlation-v1",
+    "lookbackMinutes": 30,
+    "failedSignInThreshold": 3,
+    "trackedRoles": [
+      "roles/owner",
+      "roles/iam.securityAdmin"
+    ],
+    "resource": "projects/demo-triage-project",
+    "cases": [
+      {
+        "status": "REVIEW",
+        "reason": "Successful tracked administrator grant; sign-in context gathered for review.",
+        "grant": {
+          "record": {
+            "eventId": "authorized-002",
+            "eventType": "iam_binding_change",
+            "occurredAt": "2026-11-17T09:00:00Z",
+            "actor": "casey.rivera@example.com",
+            "sourceIp": "192.0.2.20",
+            "outcome": "success",
+            "resource": "projects/demo-triage-project",
+            "changeAction": "ADD",
+            "role": "roles/iam.securityAdmin",
+            "recipient": "user:emery.brooks@example.com"
+          },
+          "occurredAtUtc": "2026-11-17T09:00:00Z",
+          "sourceIpNormalized": "192.0.2.20",
+          "sourceRecordIndices": [
+            1
+          ]
+        },
+        "windowStartInclusive": "2026-11-17T08:30:00Z",
+        "windowEndInclusive": "2026-11-17T09:00:00Z",
+        "actorSignIns": [
+          {
+            "record": {
+              "eventId": "authorized-001",
+              "eventType": "sign_in",
+              "occurredAt": "2026-11-17T08:50:00Z",
+              "actor": "casey.rivera@example.com",
+              "sourceIp": "192.0.2.20",
+              "outcome": "success"
+            },
+            "occurredAtUtc": "2026-11-17T08:50:00Z",
+            "sourceIpNormalized": "192.0.2.20",
+            "sourceRecordIndices": [
+              0
+            ],
+            "sameSourceIpAsGrant": true,
+            "sameTimeAsGrant": false
+          }
+        ],
+        "failedSignInCount": 0,
+        "successfulSignInCount": 1,
+        "approvalStatus": "MATCHED",
+        "priority": "ROUTINE",
+        "contextCoverage": "DECLARED_COMPLETE",
+        "caseId": "demo-authorized:authorized-002",
+        "recommendation": "ROUTINE_REVIEW",
+        "priorityReason": "Observed sign-in and grant have supporting IP baseline and matching prior approval.",
+        "matchingApprovals": [
+          {
+            "contextRecordIndex": 0,
+            "record": {
+              "changeId": "CHG-DEMO-001",
+              "status": "approved",
+              "approvedAt": "2026-11-17T08:00:00Z",
+              "approvedBy": "devon.patel@example.com",
+              "actor": "casey.rivera@example.com",
+              "recipient": "user:emery.brooks@example.com",
+              "resource": "projects/demo-triage-project",
+              "role": "roles/iam.securityAdmin",
+              "windowStartInclusive": "2026-11-17T08:30:00Z",
+              "windowEndExclusive": "2026-11-17T09:30:00Z",
+              "justification": "Time-limited security administration for a planned maintenance task."
+            }
+          }
+        ],
+        "ipFamiliarity": "KNOWN_IN_SUPPLIED_BASELINE",
+        "baselineContextIndices": [
+          0
+        ],
+        "signalSequences": [],
+        "elevatedSignalObserved": false,
+        "coverageGaps": [],
+        "incidentVerdict": "UNCONFIRMED",
+        "analystDisposition": "PENDING",
+        "nextActions": [
+          "Preserve original event/context files and validate source coverage.",
+          "Verify the change with the actor and approver through a trusted channel.",
+          "Inspect identity sessions, MFA/device context, effective access, and recipient activity.",
+          "Escalate suspected active abuse to the incident lead; obtain authorization for containment.",
+          "For temporary access, verify expiry or removal separately; an approval does not remove access."
+        ]
+      }
+    ],
+    "coverageGaps": [],
+    "skippedIamEvents": [
+      {
+        "eventId": "authorized-003",
+        "reason": "Role is not in the tracked administrator-role list."
+      }
+    ],
+    "timeline": {
+      "datasetId": "demo-authorized",
+      "inputRecordCount": 3,
+      "uniqueEventCount": 3,
+      "duplicateRecordCount": 0,
+      "events": [
+        {
+          "record": {
+            "eventId": "authorized-001",
+            "eventType": "sign_in",
+            "occurredAt": "2026-11-17T08:50:00Z",
+            "actor": "casey.rivera@example.com",
+            "sourceIp": "192.0.2.20",
+            "outcome": "success"
+          },
+          "occurredAtUtc": "2026-11-17T08:50:00Z",
+          "sourceIpNormalized": "192.0.2.20",
+          "sourceRecordIndices": [
+            0
+          ]
+        },
+        {
+          "record": {
+            "eventId": "authorized-002",
+            "eventType": "iam_binding_change",
+            "occurredAt": "2026-11-17T09:00:00Z",
+            "actor": "casey.rivera@example.com",
+            "sourceIp": "192.0.2.20",
+            "outcome": "success",
+            "resource": "projects/demo-triage-project",
+            "changeAction": "ADD",
+            "role": "roles/iam.securityAdmin",
+            "recipient": "user:emery.brooks@example.com"
+          },
+          "occurredAtUtc": "2026-11-17T09:00:00Z",
+          "sourceIpNormalized": "192.0.2.20",
+          "sourceRecordIndices": [
+            1
+          ]
+        },
+        {
+          "record": {
+            "eventId": "authorized-003",
+            "eventType": "iam_binding_change",
+            "occurredAt": "2026-11-17T09:05:00Z",
+            "actor": "casey.rivera@example.com",
+            "sourceIp": "192.0.2.20",
+            "outcome": "success",
+            "resource": "projects/demo-triage-project",
+            "changeAction": "ADD",
+            "role": "roles/viewer",
+            "recipient": "user:alex.morgan@example.com"
+          },
+          "occurredAtUtc": "2026-11-17T09:05:00Z",
+          "sourceIpNormalized": "192.0.2.20",
+          "sourceRecordIndices": [
+            2
+          ]
+        }
+      ]
+    },
+    "limitations": [
+      "Fictional normalized inputs; no provider APIs or authentic source attestations.",
+      "Source coverage and approvals are supplied assumptions, not independently established facts.",
+      "Priority is a reproducible review recommendation, not a compromise or authorization verdict.",
+      "The named roles/project/direct-user scope does not cover every privilege or attack path.",
+      "Matching IPs do not prove a shared session; equal timestamps cannot prove sequence."
+    ]
+  },
+  "error": null
+}

@@ -1,1 +1,1 @@
-"""Local security alert triage learning project; implementation follows later."""
+"""Local event parsing, correlation, context evaluation, and investigation reports."""

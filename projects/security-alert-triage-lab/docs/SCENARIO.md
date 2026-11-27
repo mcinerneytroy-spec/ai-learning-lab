@@ -22,7 +22,7 @@ and `recipient`. Actions are ADD or REMOVE. Field values are our lab contract,
 not provider-specific method names. A missing actor is a data-quality issue,
 never permission to substitute the recipient.
 
-## Proposed deterministic correlation policy: triage-v1
+## Implemented deterministic correlation policy: triage-v1
 
 - Identify successful privileged ADDs under the stated project/role/recipient
   scope. Failed operations and REMOVEs do not establish a successful grant.
@@ -81,11 +81,20 @@ resource, and approved time window. Expected recommendation: routine review with
 supporting context; record uncertainty and verify the intended temporary-access
 removal. This does not prove the account or change is harmless.
 
-## Planned quality checks
+## Verification
 
-Tests will cover invalid or timezone-free timestamps, exact duplicate events,
+The parser lesson implements 17 tests for required fields, timestamp/IP
+validation, duplicates, conflicting IDs, deterministic sorting, JSON ambiguity,
+input preservation, and CLI behavior. The first detection increment adds 13 tests
+for successful privileged-grant selection, actor correlation, time boundaries,
+duplicate handling, skipped events, and preserved evidence. Total: 30 tests.
+The finished lab adds 20 context-policy tests and 10 report/execution tests.
+Total: 60 tests. Source/context capture, approval boundaries, priority decisions,
+failure retention, and file-to-report behavior are implemented.
+
+Tests cover invalid or timezone-free timestamps, exact duplicate events,
 conflicting IDs, failed grants, other roles, REMOVE actions, the 30-minute
 boundary, after-grant activity, recipient-only sign-ins, missing baseline,
 unknown source completeness, mismatched/late approvals, and preserved input data.
-Report tests will verify references back to the source IDs and distinguish event
-time from actual analysis time. These tests are planned, not implemented yet.
+Report tests verify references back to the source IDs and distinguish event
+time from actual analysis time. See the README for current commands and limits.

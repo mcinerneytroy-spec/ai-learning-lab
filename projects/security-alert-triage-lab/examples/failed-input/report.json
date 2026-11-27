@@ -1,0 +1,19 @@
+{
+  "reportSchemaVersion": "1.0",
+  "fictional": true,
+  "runId": "03f40b3a50964e179d3c040e5a2f5197",
+  "runStatus": "FAILED",
+  "analystLabel": "demo-analyst",
+  "analysisStartedAt": "2026-11-20T18:51:54.480552+00:00",
+  "analysisCompletedAt": "2026-11-20T18:51:54.480919+00:00",
+  "sources": [
+    {
+      "kind": "events",
+      "fileName": "missing-demo-events.json",
+      "readStartedAt": "2026-11-20T18:51:54.480728+00:00",
+      "readCompletedAt": "2026-11-20T18:51:54.480740+00:00"
+    }
+  ],
+  "analysis": null,
+  "error": "An input file could not be read."
+}
